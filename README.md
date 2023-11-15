@@ -1,5 +1,5 @@
 # DrivingWithCamera
-Overall, the purpose of this code is to 
+There are 3 segments of code that make up this project stored on the computer, the Pico, and the Lego car. On the computer, an image is processed in real-time such that the x-centroid is calculated and sent over MQTT to the Pico. From there, the Pico reads the MQTT message and sends it over BLE to the Lego car. Finally, the Lego car receives the Bluetooth message, determines from its value what direction to go, and goes that way. 
 
 ## Real-time Blob Tracking with MQTT Integration: camera_test.py
 This Python script captures video from a camera, tracks a red blob in the frames, and publishes the x-coordinate of the blob's centroid using the MQTT (Message Queuing Telemetry Transport) protocol.
